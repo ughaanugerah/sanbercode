@@ -1,0 +1,29 @@
+.logo{
+    width: 200px;
+}
+
+.nav-toplink{
+    padding: 10px;
+}
+
+.justify-content-end{
+    padding-top: 15px;
+}
+
+.link-menu{
+    padding: 5px;
+    text-align: center;
+    height: 40px;
+    margin-bottom: 20px;
+}
+
+.jumbotron{
+    background-image: url("asset/bg-image.jpg");
+    background-size: contain;
+}
+
+.find-us{
+    margin-top: 20px;
+    border: 1px solid rgba(0,0,0,.125);
+    padding: 10px;
+}
