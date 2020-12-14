@@ -60,5 +60,34 @@
             hasil += itemCard(items[i][1], items[i][2],items[i][3],items[i][4] )
             document.getElementById("listBarang").innerHTML = hasil;
         }
+
+        function filter(key) {
+            var filteredItems = [];
+            for (let j = 0; j < items.length; j++) {
+                var item = items[j];
+                var namaItem = item[j];
+                var isMatch = key.toLowerCase().includes(key.toLowerCase);
+
+                if (isMatch == true) {
+                    filteredItems.push(item);
+                }
+                
+            }
+            return filteredItems;
+        }
+
+        var formSearch = document.getElementById('keyword');
+        formSearch.addEventListener("submit", function(event){
+            event.preventDefault;
+            var keyword = document.getElementById('keyword').value;
+
+            var terfilter = filter(keyword);
+            printItems(terfilter);
+        })
+
+        while (condition) {
+            
+        }
     </script>
+
 </body>
